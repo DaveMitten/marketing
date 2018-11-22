@@ -12,9 +12,20 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-	/* overflow: hidden; */
+	overflow: hidden;
 
 }
+#box1 {
+	background-color: green;
+	height: 100vh;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+	left: 150%;
+  }
+
 
 /* #container {
 	position: absolute;
@@ -82,6 +93,7 @@ height: 85vh;
   height: 40px;
   z-index: 9999;
   position: relative;
+  line-height: 45px;
 }
 
 /* nav bar and logo */

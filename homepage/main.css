@@ -65,7 +65,12 @@ body {
 
 #box1 {
   background-color: green;
-  left: 50%;
+  height: 100vh;
+  position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
 }
 
 #box2 {
