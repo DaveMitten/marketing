@@ -1,8 +1,5 @@
-// burger menu jquery
-// console.log($);
-
-// alert("hello");
 $(document).ready(function() {
+
   // fly out burger menu
   $('.menu').click(function() {
     console.log('clicked');
@@ -10,6 +7,8 @@ $(document).ready(function() {
     $('.navbar-menu').toggleClass('active');
   });
 
+
+  
   // slide left functionality
   $('.box').click(function() {
     console.log('BEEN CLICKED!');

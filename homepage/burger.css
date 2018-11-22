@@ -48,7 +48,7 @@
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #262626;
   height: 50px;
   width: 50px;
