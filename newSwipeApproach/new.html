@@ -3,26 +3,38 @@
   <head>
     <meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.js"></script>
-    <script src="new.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>  
+	<script>
+	TouchEmulator();
+	</script>
+	<script src="new.js"></script>
+	
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" media="screen" href="new.css" />
 
   </head>
-  <body>   
-	  <div id="carousel">
-        <ul>
-            <li class="pane1"><h2>Swipe...</h2></li>
-            <li class="pane2"><h2>...or drag...</h2></li>
-            <li class="pane3"><h2>...or swipe...</h2></li>
-            <li class="pane4"><h2>..or drag...</h2></li>
-            <li class="pane5"><h2>Dit is het einde!</h2></li>
-        </ul>
-    </div>
-    
+  <body>  
+	
+		<div class='carousel'>
+				<ul class='pane-container'>
+				  <li class='pane'>
+					<div class='vertical-center'>1</div>
+				  </li>
+				  <li class='pane'>
+					<div class='vertical-center'>2</div>
+				  </li>
+				  <li class='pane'>
+					<div class='vertical-center'>3</div>
+				  </li>
+					  <li class='pane'>
+					<div class='vertical-center'>4</div>
+				  </li>
+				</ul>
+			  </div>
+	
     </div>
   </body>
 </html>
