@@ -26,7 +26,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,11 +57,14 @@ body {
 /* HOMEPAGE */
 
 .homepage {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 100%;
   width: 100%;
   position: relative;
   border: 10px solid white;
+}
+.backgroundColorHomepage {
+  background-color: #bdbdff;
 }
 
 .mainText {
@@ -125,15 +128,6 @@ body {
 
 /* <---------------------------------------------> */
 
-.oval {
-  display: inline-block;
-  background-color: maroon;
-  text-align: center;
-  border-top-left-radius: 110px;
-  border-top-right-radius: 110px;
-  line-height: 90px;
-  color: white;
-}
 .spanOval {
   padding: 0px 25px 0 25px;
   word-wrap: break-word;
@@ -145,9 +139,6 @@ body {
   margin-right: auto;
   margin-top: 25px;
 }
-
-/* For the 2nd horizontal page oval padding */
-
 .ovalPaddingHorizontalTwo {
   margin-top: 20px;
 }
@@ -155,27 +146,21 @@ body {
 .ovalTwo {
   margin-top: 20px;
   display: inline-block;
-  background-color: maroon;
+  background-color: #ffc33e;
   text-align: center;
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   width: 225px;
   height: 160px;
-  color: white;
-}
-/* For the 3rd horizontal page oval padding */
-
-.ovalPaddingHorizontalThree {
-  margin-top: auto;
+  color: #030e2d;
 }
 
-.ovalPaddingTop {
-  margin-top: 20px;
-}
-/* <0--------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------> */
 
 /* page 2 - horizontal */
-
+.backgroundColorPageTwo {
+  background-color: lightcoral;
+}
 .PageTwoMainText {
   /* height: 50%; */
   display: flex;
@@ -204,6 +189,10 @@ body {
 
 /* page 3 - horizontal */
 
+.backgroundColorPageThree {
+  background-color: aquamarine;
+}
+
 .pageThreeMainText {
   /* height: 50%; */
   display: flex;
@@ -215,42 +204,38 @@ body {
   width: 60%;
   position: relative;
 }
-.pageThreeBottomRight{
-position: absolute;
-bottom: 0;
-right: 0;
-left: 55px;
-top: 100px;
+.pageThreeBottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 55px;
+  top: 100px;
 }
 
 @media only screen and (min-height: 670px) {
-  .pageThreeBottomRight{
+  .pageThreeBottomRight {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 55px;
     top: 100px;
-    
   }
 }
 @media only screen and (min-height: 700px) {
-  .pageThreeBottomRight{
+  .pageThreeBottomRight {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 55px;
     top: 125px;
-    }
   }
-
-@media only screen and (min-height: 800px) {
-  .pageThreeBottomRight{
-    top: 200px;
-    }
 }
 
-
-
+@media only screen and (min-height: 800px) {
+  .pageThreeBottomRight {
+    top: 200px;
+  }
+}
 
 .pageThreeMainTextContentOne {
   padding-top: 30px;
@@ -267,3 +252,44 @@ top: 100px;
 }
 
 /* <------------------------------------------------> */
+
+/* VERTICAL BOTTOM SLIDE */
+
+.backgroundColorVerticalBottom {
+  background-color: lightblue;
+}
+.PageVerticalBottomMainText {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+.pageVerticalBottomTextContentOne {
+  font-size: 40px;
+  word-wrap: break-word;
+  margin: 4px 0 4px 0;
+  text-align: center;
+  margin: auto;
+  padding: 0 25% 0 25%;
+}
+.pageVerticalBottomTextContentTwo {
+  font-size: 80px;
+  word-wrap: break-word;
+  width: 100%;
+  padding: auto;
+  font-weight: bolder;
+  line-height: 70px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.hideArrow{
+  visibility: hidden;
+}
+
+
+
