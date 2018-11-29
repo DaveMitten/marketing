@@ -222,6 +222,36 @@ right: 0;
 left: 55px;
 top: 100px;
 }
+
+@media only screen and (min-height: 670px) {
+  .pageThreeBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 55px;
+    top: 100px;
+    
+  }
+}
+@media only screen and (min-height: 700px) {
+  .pageThreeBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 55px;
+    top: 125px;
+    }
+  }
+
+@media only screen and (min-height: 800px) {
+  .pageThreeBottomRight{
+    top: 200px;
+    }
+}
+
+
+
+
 .pageThreeMainTextContentOne {
   padding-top: 30px;
   font-size: 30px;
