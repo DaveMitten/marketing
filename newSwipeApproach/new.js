@@ -1,4 +1,5 @@
 console.clear && console.clear();
+$(document).ready(function() {
 
 var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
 
@@ -120,3 +121,5 @@ function Carousel(selector) {
 var c = new Carousel('.carousel');
 c.init();
 c.showPane(0);
+
+});
