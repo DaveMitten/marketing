@@ -153,6 +153,7 @@ body {
   width: 225px;
   height: 160px;
   color: #030e2d;
+  font-size: bold;
 }
 
 /* <--------------------------------------------------------------------> */
@@ -263,20 +264,35 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 10px;
   color: white;
   text-align: center;
   margin-top: 15px;
+  word-wrap: break-word;
 }
 .pageVerticalBottomTextContentOne {
   font-size: 40px;
-  word-wrap: break-word;
-  margin: 4px 0 4px 0;
-  text-align: center;
-  margin: auto;
-  padding: 0 25% 0 25%;
+  font-weight: bolder;
+  margin: 0 0 25px 0;
+  /* margin: auto; */
+  padding: 0 20% 0 20%;
 }
 .pageVerticalBottomTextContentTwo {
+  font-size: 20px;
+  word-wrap: break-word;
+  width: 75%;
+  margin: auto;
+  padding: 0px 20px 0 45px;
+}
+.pageVerticalBottomTextContentThree{
+  font-size: 20px;
+  word-wrap: break-word;
+  width: 75%;
+  margin: auto;
+  padding: 0px 20px 0 45px;
+}
+
+/* .pageVerticalBottomTextContentTwo {
   font-size: 80px;
   word-wrap: break-word;
   width: 100%;
@@ -285,11 +301,33 @@ body {
   line-height: 70px;
   margin: auto;
   padding-top: 25px;
-}
+} */
 
-.hideArrow{
+.hideArrow {
   visibility: hidden;
 }
 
 
+.bottomCircle{
+border-radius: 100px;
+margin-top: 20px;
+display: inline-block;
+background-color: #ffc33e;
+text-align: center;
+width: 100px;
+height: 100px;
+color: #030e2d;
+font-size: bolder;
+}
 
+.spanBottomOval {
+  padding: 0px 17px 0 17px;
+  word-wrap: break-word;
+}
+.spanBottomOval > span {
+  display: block;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
