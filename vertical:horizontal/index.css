@@ -1,19 +1,33 @@
 /* main styling */
+/* <============fonts==================+> */
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Avenir-Medium'), 
+  url(fonts/AvenirNext/Avenir-Medium.woff) format('woff'),
+  url(fonts/AvenirNext/Avenir-Medium.ttf) format('ttf'),
+  url(fonts/AvenirNext/Avenir-Medium.svg) format('svg'),
+  url(fonts/AvenirNext/Avenir-Medium.eot) format('eot')
+
+}
+
 
 html,
 body {
   position: relative;
   height: 100%;
+  font-family: 'Avenir'; 
 }
 body {
-  /* background: #eee; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  font-family: 'Avenir'; 
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
-  /* box-shadow: inset 0 0 10px #fff; */
 }
+
 
 /* <---------------------------------------------------------------------> */
 
@@ -21,7 +35,6 @@ body {
 
 .swiper-container {
   width: 100%;
-  /* height: 93vh; */
   height: 100vh;
 
 
@@ -29,7 +42,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #fff; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,10 +83,17 @@ body {
   position: relative;
   border-left: 10px solid white;
   border-right: 10px solid white;
-  border-top: 15px solid white;
-  /* border: 10px solid white; */
+      border-bottom: 15px solid white;
 
+  font-family: 'Avenir', Fallback, sans-serif;; 
 }
+.borderTopSlide{
+    border-top: 30px solid white;
+}
+.borderBottomSlide{
+  border-bottom: 30px solid white;
+}
+
 
 /* <==============logo=================> */
 .topLeftLogo{
@@ -88,6 +107,16 @@ body {
   width: 80px;
 
 }
+
+.topLeftLogPageThreeHorizontal{
+  padding: 15px 0 0 5px;
+}
+
+.topLeftLogPageTwoHorizontal{
+  margin-left: 0;
+}
+
+
 
 
 
@@ -128,32 +157,64 @@ body {
   padding-top: 25px;
 }
 
+.mainTextContentOne {
+  font-size: 35px;
+
+}
+  
+.mainTextContentTwo {
+  font-size: 70px;
+
+}
+
+
 .mainBottomSection {
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  top: 435px;
-  border-bottom: 15px solid white;
+  top: calc(100% - 170px)  /* border-bottom: 10px solid white; */
 }
-@media only screen and (min-height: 700px) {
+.bottomBorder{
+    border-bottom: 10px solid white;
+
+}
+
+.mainBottomSectionPage1{
+  top: calc(100% - 170px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 15px solid white;
+
+}
+/* @media only screen and (min-height: 700px) {
   .mainBottomSection {
-    top: 505px;
+    top: 535px;
+  }
+  .mainBottomSectionPage1{
+    top: 535px;
+  
   }
 }
 @media only screen and (min-height: 750px) {
   .mainBottomSection {
-    top: 585px;
+    top: 605px;
+  }
+  .mainBottomSectionPage1{
+    top: 605px;
+  
   }
 }
 @media only screen and (min-height: 850px) {
   .mainBottomSection {
     top: 665px;
   }
-}
+} */
 
 .iconSize {
-  font-size: 48px;
+  font-size: 35px;
   color: red;
 }
 
@@ -171,11 +232,14 @@ body {
   margin-top: 40px;
 }
 .ovalPaddingHorizontalTwo {
-  margin-top: 45px;
+  margin-top: 10px;
+}
+.ovalPaddingHorizontalTwoPageOne {
+  /* margin-top: 10px; */
 }
 
 .ovalTwo {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: inline-block;
   background-color: #ffc33e;
   text-align: center;
@@ -288,7 +352,8 @@ body {
 /* VERTICAL BOTTOM SLIDE */
 
 .backgroundColorVerticalBottom {
-  background-color: lightblue;
+  background-color: #ffc33e;
+  border-bottom: 0px solid white;
 }
 .PageVerticalBottomMainText {
   height: 50%;
@@ -301,8 +366,19 @@ body {
   margin-top: 15px;
   word-wrap: break-word;
 }
+
+@media only screen and (min-height: 800px) {
+ .PageVerticalBottomMainText{
+margin-top: 40px;
+}
+.arrowMargin{
+  margin-bottom: 40px;
+}
+}
+
+
 .pageVerticalBottomTextContentOne {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bolder;
   margin: 0 0 25px 0;
   /* margin: auto; */
@@ -310,15 +386,14 @@ body {
   line-height: 65px;
 }
 .pageVerticalBottomTextContentTwo {
-  font-size: 20px;
+  font-size: 15px;
   word-wrap: break-word;
   width: 75%;
   margin: auto auto 15px auto;
-
   padding: 0px 20px 0 45px;
 }
 .pageVerticalBottomTextContentThree{
-  font-size: 20px;
+  font-size: 15px;
   word-wrap: break-word;
   width: 75%;
   margin: auto;
@@ -345,7 +420,7 @@ body {
 border-radius: 100px;
 margin-top: 20px;
 display: inline-block;
-background-color: #ffc33e;
+background-color: white;
 text-align: center;
 width: 100px;
 height: 100px;
