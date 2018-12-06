@@ -78,17 +78,17 @@ body {
 
 .homepage {
   /* background-color: lightblue; */
-  height: 100%;
+  height: 97%;
   width: 100%;
   position: relative;
   border-left: 10px solid white;
   border-right: 10px solid white;
-      border-bottom: 15px solid white;
-
+  /* border-bottom: 15px solid white; */
+/* CHANGED HERE */
   font-family: 'Avenir', Fallback, sans-serif;; 
 }
 .borderTopSlide{
-    border-top: 30px solid white;
+    /* border-top: 30px solid white; */
 }
 .borderBottomSlide{
   border-bottom: 30px solid white;
@@ -115,14 +115,6 @@ body {
 .topLeftLogPageTwoHorizontal{
   margin-left: 0;
 }
-
-
-
-
-
-
-
-
 
 .backgroundColorHomepage {
   background-color: #bdbdff;
@@ -175,18 +167,21 @@ body {
   left: 0;
   top: calc(100% - 170px)  /* border-bottom: 10px solid white; */
 }
+
+/* ,CHANGED HERE */
+
 .bottomBorder{
-    border-bottom: 10px solid white;
+    /* border-bottom: 10px solid white; */
 
 }
-
+/* ,CHANGED HERE */
 .mainBottomSectionPage1{
   top: calc(100% - 170px);
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  border-bottom: 15px solid white;
+  /* border-bottom: 15px solid white; */
 
 }
 /* @media only screen and (min-height: 700px) {
