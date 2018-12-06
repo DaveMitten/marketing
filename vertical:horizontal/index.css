@@ -255,6 +255,9 @@ body {
 
 /* page 2 - horizontal */
 .backgroundColorPageTwo {
+  background-image: url("./images/blackDog-yellowBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: lightcoral;
 }
 .PageTwoMainText {
@@ -286,6 +289,9 @@ body {
 /* page 3 - horizontal */
 
 .backgroundColorPageThree {
+  background-image: url("./images/ZeusDog-blueBackground-Chew.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: aquamarine;
 }
 
