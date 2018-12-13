@@ -1,9 +1,3 @@
- 
-
-
-
-
-
 jQuery.getScript("https://use.fontawesome.com/releases/v5.5.0/js/all.js");
 
 jQuery(document).ready(function() {
