@@ -7,366 +7,692 @@
       name="viewport"
       content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <script type="text/javascript" src="index.js"></script>
 
+    <!-- First try loading jQuery from Google's CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <!-- Fall back to a local copy of jQuery if the CDN fails -->
+    <script>
+    window.jQuery || document.write('<script src="http://mysite.com/jquery.min.js"><\/script>')</script>
+    
+
+    <script type="text/javascript" src="test.js"></script>
     <script type="text/javascript" src="swiper.min.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
       integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
-      crossorigin="anonymous"
-    ></script>
-
+      crossorigin="anonymous"></script>
     <!-- Link Swiper's CSS -->
-
     <link rel="stylesheet" href="swiper.min.css" />
-    <link rel="stylesheet" href="index.css" />
-    <!-- <link rel="stylesheet" href="header.css" /> -->
+    <link rel="stylesheet" href="test.css" />
   </head>
   <body>
-    <!-- <div class="topBar">
-      <img class="tailsLogo" src="#" alt="tailsLogo" />
-      <div class="menu"><span></span></div>
-    </div> -->
-    <!-- Swiper -->
-    <div class="swiper-container swiper-container-h">
-      <div class="swiper-wrapper">
-        <!-- <div class="swiper-slide">Horizontal Slide 1</div> -->
-        <div class="swiper-slide">
-          <div class="swiper-container swiper-container-v">
-            <div class="swiper-wrapper">
-              <!-- <========== landing page =============> -->
-              <div id class="swiper-slide">
-                <main class="homepage backgroundColorHomepage borderTopSlide">
-                  <section class="mainText">
-                    <a href="https://tails.com/">
+
+<!-- Swiper -->
+<div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+
+      <!-- <==========  page 1 horizontal =============> -->
+
+
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+
+            <!-- <========== landing page =============> -->
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorHomepage borderTopSlide">
+                <section class="mainText">
+                  <div class="topLeftLogo">
+                    <a href="https://tails.com"
+                      ><img
+                        alt="tailsLogo"
+                        class="tailsLogo"
+                        src="https://sb.monetate.net/img/1/1087/1862837.png"
+                    /></a>
+                  </div>
+  
+                  <div class="mainTextContentOne">Food as unique as your dog</div>
+  
+                  <div class="mainTextContentTwo">How it works</div>
+                </section>
+  
+                <div class="mainBottomSectionPage1">
+                  <div class="iconSize" role="button">
+                    <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                  </div>
+  
+                  <div class="ovalPaddingHorizontalTwoPageOne">
+                    <div class="ovalTwo">
+                      <a href="https://tails.com/newsignup/register">
+                        <div class="spanOval"><span>Try now for free!</span></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <!-- <========== vertical bottom page 1 =============> -->
+  
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorVerticalBottom">
+                <section class="PageVerticalBottomMainText">
+                  <!--
                     <div class="topLeftLogo">
                         <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
                     </div>
-                  </a>
-                    <div class="mainTextContentOne">
-                      Food as unique as your dog
-                    </div>
-                    <div class=" mainTextContentTwo">How it works</div>
-                  </section>
-                  <div class=" mainBottomSectionPage1">
-                    <div class="iconSize" role="button">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                    <div class=" ovalPaddingHorizontalTwoPageOne">
-                      <div class="ovalTwo">
-                        <div class="spanOval">
-                          <span>Try now for free!</span>
-                        </div>
-                      </div>
-                    </div>
+                  -->
+                  <div class="pageVerticalBottomTextContentOne">
+                    Get 2 weeks&#39; free food
                   </div>
-                </main>
-              </div>
-
-              <!-- <========== vertical bottom page =============> -->
-              <div id class="swiper-slide">
-                <main class="homepage backgroundColorVerticalBottom">
-                  <section class="PageVerticalBottomMainText">
-                      <!-- <div class="topLeftLogo">
-                          <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-                      </div> -->
-                    <div id="arrowMargin" class="iconSize clickUp">
-                      <i class="fas fa-angle-up"></i>
-                    </div>
-                    <div class="pageVerticalBottomTextContentOne">
-                      Get 2 weeks' free food
-                    </div>
-                    <div class="pageVerticalBottomTextContentTwo">
-                      Give them th nutrition they need and the flavours they
-                      love.
-                    </div>
-                    <div class="pageVerticalBottomTextContentThree">
-                      Developed by vets and nutritionists, made with the
-                      high-quality ingredients delivered to your door
-                    </div>
-                  </section>
-                  <div class="mainBottomSection bottomBorder">
-                    <!-- <div class="iconSize hideArrow">
+  
+                  <div class="pageVerticalBottomTextContentTwo">
+                    Give them the nutrition they need and the flavours they love.
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentThree">
+                    Developed by vets and nutritionists, made with high-quality
+                    ingredients, delivered to your door.
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection bottomBorder">
+                  <!--
+                    <div class="iconSize hideArrow">
                       <i class="fas fa-angle-right"></i>
-                    </div> -->
-                    <div class="ovalPaddingHorizontalTwo">
+                    </div>
+                  -->
+                  <div class="ovalPaddingHorizontalTwo">
+                    <a href="https://tails.com/newsignup/register">
                       <div class="bottomCircle">
                         <div class="spanBottomOval">
                           <span>Try now for free!</span>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                </main>
-              </div>
+                </div>
+              </main>
             </div>
           </div>
         </div>
-        
+      </div>
+      <!-- <==========  page 2 horizontal =============> -->
+  
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <!-- <========== landing page =============> -->
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorPageTwo borderTopSlide">
+                <section class="PageTwoMainText">
+                  <div class="topLeftLogo topLeftLogPageTwoHorizontal">
+                    <a href="https://tails.com"
+                      ><img
+                        alt="tailsLogo"
+                        class="tailsLogo"
+                        src="https://sb.monetate.net/img/1/1087/1862837.png"
+                    /></a>
+                  </div>
+  
+                  <div class="pageTwoMainTextContentOne">
+                    Tell us about your dog
+                  </div>
+  
+                  <div class="pageTwoMainTextContentTwo">
+                    From basic profile to lifestyle, health &amp; favourite
+                    flavours
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection">
+                  <div class="iconSize" role="button">
+                    <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                  </div>
+  
+                  <div class="ovalPaddingHorizontalTwo">
+                    <div class="ovalTwo">
+                      <a href="https://tails.com/newsignup/register">
+                        <div class="spanOval"><span>Try now for free!</span></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <!-- <========== vertical bottom page 2 =============> -->
+  
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorVerticalBottom">
+                <section class="PageVerticalBottomMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                    </div>
+                  -->
+                  <div class="pageVerticalBottomTextContentOne">
+                    Get 2 weeks&#39; free food
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentTwo">
+                    Give them the nutrition they need and the flavours they love.
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentThree">
+                    Developed by vets and nutritionists, made with high-quality
+                    ingredients, delivered to your door.
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection bottomBorder">
+                  <!--
+                    <div class="iconSize hideArrow">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  -->
+                  <div class="ovalPaddingHorizontalTwo">
+                    <a href="https://tails.com/newsignup/register">
+                      <div class="bottomCircle">
+                        <div class="spanBottomOval">
+                          <span>Try now for free!</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <==========  page 3 horizontal=============> -->
+  
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <!-- <========== landing page =============> -->
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorPageThree borderTopSlide">
+                <div class="topLeftLogo topLeftLogPageThreeHorizontal">
+                  <a href="https://tails.com"
+                    ><img
+                      alt="tailsLogo"
+                      class="tailsLogo"
+                      src="https://sb.monetate.net/img/1/1087/1862837.png"
+                  /></a>
+                </div>
+  
+                <section class="pageThreeMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                    </div>
+                  -->
+                  <div class="pageThreeBottomRight">
+                    <div class="pageThreeMainTextContentOne">
+                      Discover their unique recipe
+                    </div>
+  
+                    <div class="pageThreeMainTextContentTwo">
+                      The nutrition they need. The flavours they love
+                    </div>
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection">
+                  <div class="iconSize" role="button">
+                    <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                  </div>
+  
+                  <div class="ovalPaddingHorizontalTwo">
+                    <div class="ovalTwo">
+                      <a href="https://tails.com/newsignup/register">
+                        <div class="spanOval"><span>Try now for free!</span></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <!-- <========== vertical bottom page 3 =============> -->
+  
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorVerticalBottom">
+                <section class="PageVerticalBottomMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                    </div>
+                  -->
+                  <div class="pageVerticalBottomTextContentOne">
+                    Get 2 weeks&#39; free food
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentTwo">
+                    Give them the nutrition they need and the flavours they love.
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentThree">
+                    Developed by vets and nutritionists, made with high-quality
+                    ingredients, delivered to your door.
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection bottomBorder">
+                  <!--
+                    <div class="iconSize hideArrow">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  -->
+                  <div class="ovalPaddingHorizontalTwo">
+                    <a href="https://tails.com/newsignup/register">
+                      <div class="bottomCircle">
+                        <div class="spanBottomOval">
+                          <span>Try now for free!</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
 
-        <!-- <========== horizontal page 2 bottom page =============> -->
-
-        <div class="swiper-slide">
-            <div class="swiper-container swiper-container-v">
+           <!-- <==========  page 7 horizontal=============> -->
+  
+           <div class="swiper-slide">
+              <div class="swiper-container swiper-container-v">
                 <div class="swiper-wrapper">
                   <!-- <========== landing page =============> -->
-                  <div id class="swiper-slide">
-          <main class="homepage backgroundColorPageTwo borderTopSlide">
-            <section class="PageTwoMainText">
-                <a href="https://tails.com/">
-                <div class="topLeftLogo topLeftLogPageTwoHorizontal">
-                    <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-                </div>
-              </a>
-              <div class="pageTwoMainTextContentOne">
-                Tell us about your dog
-              </div>
-              <div class="pageTwoMainTextContentTwo">
-                From the basic profile to lifestyle, health & favourite flavours
-              </div>
-            </section>
-            <div class="mainBottomSection">
-              <div class="iconSize"><i class="fas fa-angle-right"></i></div>
-              <div class="ovalPaddingHorizontalTwo">
-                <div class="ovalTwo">
-                  <div class="spanOval"><span>Try now for free!</span></div>
+                  <div class="swiper-slide" id="">
+                    <main class="homepage backgroundColorPageSeven borderTopSlide">
+                      <div class="topLeftLogo topLeftLogPageThreeHorizontal">
+                        <a href="https://tails.com"
+                          ><img
+                            alt="tailsLogo"
+                            class="tailsLogo"
+                            src="https://sb.monetate.net/img/1/1087/1862837.png"
+                        /></a>
+                      </div>
+        
+                      <section class="pageSevenMainText">
+                        <!--
+                          <div class="topLeftLogo">
+                              <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                          </div>
+                        -->
+                        <div class="pageSevenBottomRight">
+                          <div class="pageSevenMainTextContentOne">
+    Totally delicious                      </div>
+        
+                          <div class="pageSevenMainTextContentTwo">
+    Empty bowl.<br>Shiny coat.<br>Bouncy walk.                      </div>
+                        </div>
+                      </section>
+        
+                      <div class="mainBottomSection">
+                        <div class="iconSize" role="button">
+                          <img src="" />
+                          <!-- https://sb.monetate.net/img/1/1087/1863580.png -->
+                        </div>
+        
+                        <div class="ovalPaddingHorizontalTwo">
+                          <div class="ovalTwo">
+                            <a href="https://tails.com/newsignup/register">
+                              <div class="spanOval"><span>Try now for free!</span></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                  <!-- <========== vertical bottom page 7 =============> -->
+        
+                  <div class="swiper-slide" id="">
+                    <main class="homepage backgroundColorVerticalBottom">
+                      <section class="PageVerticalBottomMainText">
+                        <!--
+                          <div class="topLeftLogo">
+                              <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                          </div>
+                        -->
+                        <div class="pageVerticalBottomTextContentOne">
+                          Get 2 weeks&#39; free food
+                        </div>
+        
+                        <div class="pageVerticalBottomTextContentTwo">
+                          Give them the nutrition they need and the flavours they love.
+                        </div>
+        
+                        <div class="pageVerticalBottomTextContentThree">
+                          Developed by vets and nutritionists, made with high-quality
+                          ingredients, delivered to your door.
+                        </div>
+                      </section>
+        
+                      <div class="mainBottomSection bottomBorder">
+                        <!--
+                          <div class="iconSize hideArrow">
+                            <i class="fas fa-angle-right"></i>
+                          </div>
+                        -->
+                        <div class="ovalPaddingHorizontalTwo">
+                          <a href="https://tails.com/newsignup/register">
+                            <div class="bottomCircle">
+                              <div class="spanBottomOval">
+                                <span>Try now for free!</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
                 </div>
               </div>
             </div>
-          </main>
+      
+  
+      <!-- <==========  page 5 horizontal=============> -->
+  
+  
+  
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+  
+            
+            <!-- <========== landing page =============> -->
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorPageFive borderTopSlide">
+                <div class="topLeftLogo topLeftLogPageThreeHorizontal">
+                  <a href="https://tails.com"
+                    ><img
+                      alt="tailsLogo"
+                      class="tailsLogo"
+                      src="https://sb.monetate.net/img/1/1087/1862837.png"
+                  /></a>
+                </div>
+  
+                <section class="pageFiveMainText">
+      
+                  <div class="pageFiveCenterText">
+                    <div class="pageFiveMainTextContentOne">
+Developed by vets and nutritionists                    </div>
+  
+                    <div class="pageFiveMainTextContentTwo">
+For the right balance of fat, fibre, protein & nutrients
+                    </div>
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection">
+                  <div class="iconSize" role="button">
+                    <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                  </div>
+  
+                  <div class="ovalPaddingHorizontalTwo">
+                    <div class="ovalTwo">
+                      <a href="https://tails.com/newsignup/register">
+                        <div class="spanOval"><span>Try now for free!</span></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <!-- <========== vertical bottom page 5 =============> -->
+  
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorVerticalBottom">
+                <section class="PageVerticalBottomMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                    </div>
+                  -->
+                  <div class="pageVerticalBottomTextContentOne">
+                    Get 2 weeks&#39; free food
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentTwo">
+                    Give them the nutrition they need and the flavours they love.
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentThree">
+                    Developed by vets and nutritionists, made with high-quality
+                    ingredients, delivered to your door.
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection bottomBorder">
+                  <!--
+                    <div class="iconSize hideArrow">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  -->
+                  <div class="ovalPaddingHorizontalTwo">
+                    <a href="https://tails.com/newsignup/register">
+                      <div class="bottomCircle">
+                        <div class="spanBottomOval">
+                          <span>Try now for free!</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
         </div>
-                 <!-- <========== vertical bottom page 2 =============> -->
-                 <div id class="swiper-slide">
-                  <main class="homepage backgroundColorVerticalBottom">
-                    <section class="PageVerticalBottomMainText">
-                        <!-- <div class="topLeftLogo">
-                            <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-                        </div> -->
-                      <div id="arrowMargin" class="iconSize clickUp">
-                        <i class="fas fa-angle-up"></i>
-                      </div>
-                      <div class="pageVerticalBottomTextContentOne">
-                        Get 2 weeks' free food
-                      </div>
-                      <div class="pageVerticalBottomTextContentTwo">
-                        Give them th nutrition they need and the flavours they
-                        love.
-                      </div>
-                      <div class="pageVerticalBottomTextContentThree">
-                        Developed by vets and nutritionists, made with the
-                        high-quality ingredients delivered to your door
+      </div>
+  
+        <!-- <==========  page 6 horizontal=============> -->
+  
+        <div class="swiper-slide">
+            <div class="swiper-container swiper-container-v">
+              <div class="swiper-wrapper">
+                <!-- <========== landing page =============> -->
+                <div class="swiper-slide" id="">
+                  <main class="homepage backgroundColorPageSix borderTopSlide">
+                    <div class="topLeftLogo topLeftLogPageThreeHorizontal">
+                      <a href="https://tails.com"
+                        ><img
+                          alt="tailsLogo"
+                          class="tailsLogo"
+                          src="https://sb.monetate.net/img/1/1087/1862837.png"
+                      /></a>
+                    </div>
+      
+                    <section class="pageSixMainText">
+                      <!--
+                        <div class="topLeftLogo">
+                            <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                        </div>
+                      -->
+                      <div class="pageSixBottomRight">
+                        <div class="pageSixMainTextContentOne">
+                          Rated 5* on Trustpilot
+                          </div>
+      
+                        <div class="pageSixMainTextContentTwo">
+                          With lots of glossy coats and wagging tails in more than 12,000 reviews
+                        </div>
                       </div>
                     </section>
-                    <div class="mainBottomSection bottomBorder">
-                      <!-- <div class="iconSize hideArrow">
-                        <i class="fas fa-angle-right"></i>
-                      </div> -->
+      
+                    <div class="mainBottomSection">
+                      <div class="iconSize" role="button">
+                        <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                      </div>
+      
                       <div class="ovalPaddingHorizontalTwo">
-                        <div class="bottomCircle">
-                          <div class="spanBottomOval">
-                            <span>Try now for free!</span>
-                          </div>
+                        <div class="ovalTwo">
+                          <a href="https://tails.com/newsignup/register">
+                            <div class="spanOval"><span>Try now for free!</span></div>
+                          </a>
                         </div>
+                      </div>
+                    </div>
+                  </main>
+                </div>
+                <!-- <========== vertical bottom page 6 =============> -->
+      
+                <div class="swiper-slide" id="">
+                  <main class="homepage backgroundColorVerticalBottom">
+                    <section class="PageVerticalBottomMainText">
+                      <!--
+                        <div class="topLeftLogo">
+                            <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                        </div>
+                      -->
+                      <div class="pageVerticalBottomTextContentOne">
+                        Get 2 weeks&#39; free food
+                      </div>
+      
+                      <div class="pageVerticalBottomTextContentTwo">
+                        Give them the nutrition they need and the flavours they love.
+                      </div>
+      
+                      <div class="pageVerticalBottomTextContentThree">
+                        Developed by vets and nutritionists, made with high-quality
+                        ingredients, delivered to your door.
+                      </div>
+                    </section>
+      
+                    <div class="mainBottomSection bottomBorder">
+                      <!--
+                        <div class="iconSize hideArrow">
+                          <i class="fas fa-angle-right"></i>
+                        </div>
+                      -->
+                      <div class="ovalPaddingHorizontalTwo">
+                        <a href="https://tails.com/newsignup/register">
+                          <div class="bottomCircle">
+                            <div class="spanBottomOval">
+                              <span>Try now for free!</span>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </main>
                 </div>
               </div>
             </div>
-          </div>     
-            
+          </div>
+  
+ 
 
-
-        <!-- <========== horizontal page 3 bottom page =============> -->
-
-        <div class="swiper-slide">
-            <div class="swiper-container swiper-container-v">
-                <div class="swiper-wrapper">
-                  <!-- <========== landing page =============> -->
-                  <div id class="swiper-slide">
-          <main class="homepage backgroundColorPageThree borderTopSlide">
-              <div class="topLeftLogo topLeftLogPageThreeHorizontal">
-                  <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-              </div>
-            <section class="pageThreeMainText">
-                <!-- <div class="topLeftLogo">
-                    <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-                </div> -->
-              <div class="pageThreeBottomRight">
-                <div class="pageThreeMainTextContentOne">
-                  Discover their unique recipe
+     <!-- <==========  page 4 horizontal=============> -->
+  
+     <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <!-- <========== landing page =============> -->
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorPageFour borderTopSlide">
+                <div class="topLeftLogo topLeftLogPageThreeHorizontal">
+                  <a href="https://tails.com"
+                    ><img
+                      alt="tailsLogo"
+                      class="tailsLogo"
+                      src="https://sb.monetate.net/img/1/1087/1862837.png"
+                  /></a>
                 </div>
-                <div class="pageThreeMainTextContentTwo">
-                  The nutrition they need. The flavours they love
+  
+                <section class="pageFourMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
+                    </div>
+                  -->
+                  <div class="pageFourBottomRight">
+                    <div class="pageThreeMainTextContentOne">
+                      Try 2 weeks free
+                    </div>
+  
+                    <div class="pluspp">(plus P&amp;P)</div>
+  
+                    <div class="pageFourMainTextContentTwo">
+                      Then get a box each month - cancel anytime
+                    </div>
+                  </div>
+                </section>
+  
+                <div class="mainBottomSectionPage1">
+                    <div class="iconSize" role="button">
+                      <img src="https://sb.monetate.net/img/1/1087/1863580.png" />
+                    </div>
+  
+                  <div class="ovalPaddingHorizontalTwo">
+                    <div class="ovalTwo">
+                      <a href="https://tails.com/newsignup/register">
+                        <div class="spanOval"><span>Try now for free!</span></div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </section>
-            <div class="mainBottomSection">
-              <div class="iconSize"><i class="fas fa-angle-right"></i></div>
-              <div class="ovalPaddingHorizontalTwo">
-                <div class="ovalTwo">
-                  <div class="spanOval"><span>Try now for free!</span></div>
-                </div>
-              </div>
+              </main>
             </div>
-          </main>
-        </div>
-              <!-- <========== vertical bottom page =============> -->
-              <div id class="swiper-slide">
-                <main class="homepage backgroundColorVerticalBottom">
-                  <section class="PageVerticalBottomMainText">
-                      <!-- <div class="topLeftLogo">
-                          <img class="tailsLogo" src="logos/logo.png" alt="tailsLogo" />
-                      </div> -->
-                    <div id="arrowMargin" class="iconSize clickUp">
-                      <i class="fas fa-angle-up"></i>
+            <!-- <========== vertical bottom  page 4 =============> -->
+  
+            <div class="swiper-slide" id="">
+              <main class="homepage backgroundColorVerticalBottom">
+                <section class="PageVerticalBottomMainText">
+                  <!--
+                    <div class="topLeftLogo">
+                        <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
                     </div>
-                    <div class="pageVerticalBottomTextContentOne">
-                      Get 2 weeks' free food
-                    </div>
-                    <div class="pageVerticalBottomTextContentTwo">
-                      Give them th nutrition they need and the flavours they
-                      love.
-                    </div>
-                    <div class="pageVerticalBottomTextContentThree">
-                      Developed by vets and nutritionists, made with the
-                      high-quality ingredients delivered to your door
-                    </div>
-                  </section>
-                  <div class="mainBottomSection bottomBorder">
-                    <!-- <div class="iconSize hideArrow">
+                  -->
+                  <div class="pageVerticalBottomTextContentOne">
+                    Get 2 weeks&#39; free food
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentTwo">
+                    Give them the nutrition they need and the flavours they love.
+                  </div>
+  
+                  <div class="pageVerticalBottomTextContentThree">
+                    Developed by vets and nutritionists, made with high-quality
+                    ingredients, delivered to your door.
+                  </div>
+                </section>
+  
+                <div class="mainBottomSection bottomBorder">
+                  <!--
+                    <div class="iconSize hideArrow">
                       <i class="fas fa-angle-right"></i>
-                    </div> -->
-                    <div class="ovalPaddingHorizontalTwo">
+                    </div>
+                  -->
+                  <div class="ovalPaddingHorizontalTwo">
+                    <a href="https://tails.com/newsignup/register">
                       <div class="bottomCircle">
                         <div class="spanBottomOval">
                           <span>Try now for free!</span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-    <!-- <========== horizontal page 4 bottom page =============> -->
-    <div class="swiper-slide">
-      <div class="swiper-container swiper-container-v">
-        <div class="swiper-wrapper">
-          <!-- <========== landing page =============> -->
-          <div class="swiper-slide" id="">
-            <main class="homepage backgroundColorPageThree borderTopSlide">
-              <div class="topLeftLogo topLeftLogPageThreeHorizontal">
-                <a href="https://tails.com"
-                  ><img
-                    alt="tailsLogo"
-                    class="tailsLogo"
-                    src="https://sb.monetate.net/img/1/1087/1862837.png"
-                /></a>
-              </div>
-
-              <section class="pageFourMainText">
-                <!--
-                  <div class="topLeftLogo">
-                      <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
-                  </div>
-                -->
-                <div class="pageFourBottomRight">
-                  <div class="pageThreeMainTextContentOne">
-                    Try 2 weeks free 
-                    <span>(plus P/P)</span>
-                  </div>
-                   
-
-                  <div class="pageFourMainTextContentTwo">
-                      The get a box each month  - cancel anytime
-                    </div>
-                </div>
-              </section>
-
-
-
-
-
-
-
-
-
-              <div class="mainBottomSection">
-                <div class="iconSize">&nbsp;</div>
-
-                <div class="ovalPaddingHorizontalTwo">
-                  <div class="ovalTwo">
-                    <a href="https://tails.com/newsignup/register">
-                      <div class="spanOval"><span>Try now for free!</span></div>
                     </a>
                   </div>
                 </div>
-              </div>
-            </main>
-          </div>
-
-
-
-
-<!-- <========== vertical bottom  page 4 =============> -->
-
-<div class="swiper-slide" id="">
-<main class="homepage backgroundColorVerticalBottom">
-  <section class="PageVerticalBottomMainText">
-    <!--
-      <div class="topLeftLogo">
-          <img class="tailsLogo" src="https://sb.monetate.net/img/1/1087/1862837.png" alt="tailsLogo" />
-      </div>
-    -->
-    <div class="pageVerticalBottomTextContentOne">
-      Get 2 weeks&#39; free food
-    </div>
-
-    <div class="pageVerticalBottomTextContentTwo">
-      Give them the nutrition they need and the flavours they love.
-    </div>
-
-    <div class="pageVerticalBottomTextContentThree">
-      Developed by vets and nutritionists, made with the
-      high-quality ingredients delivered to your door
-    </div>
-  </section>
-
-  <div class="mainBottomSection bottomBorder">
-    <!--
-      <div class="iconSize hideArrow">
-        <i class="fas fa-angle-right"></i>
-      </div>
-    -->
-    <div class="ovalPaddingHorizontalTwo">
-      <a href="https://tails.com/newsignup/register">
-        <div class="bottomCircle">
-          <div class="spanBottomOval">
-            <span>Try now for free!</span>
+              </main>
+            </div>
           </div>
         </div>
-      </a>
+      </div>
+  
+
+
+
+
+
+  
+  
     </div>
   </div>
-</main>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </div>
   </body>
 </html>
