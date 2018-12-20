@@ -1430,6 +1430,7 @@ body {
 }
 .navBackColour{
   background: #ffc33e;
+  border-bottom: 5px solid white;
 }
 
 
@@ -1483,4 +1484,24 @@ margin: auto;
 
   .nav-link > img:hover{
     opacity: .5;
+  }
+
+  li.nav-item > .nav-link > img {
+    height: 15px;
+  }
+
+  li.bigNavLinkImgSize > .nav-link > img{
+    height: 16px;
+
+  }
+
+  li.biggerNavLinkImgSize > .nav-link > img{
+    height: 20px;
+
+  }
+
+  li.biggestNavItemSize > .nav-link > img{
+    height: 40px;
+    margin-top: 10px;
+
   }
