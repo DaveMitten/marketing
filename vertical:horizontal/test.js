@@ -44,12 +44,16 @@
 
 
 
+
+
 jQuery(document).ready(function() {
 
   jQuery('.navbar-toggler').click(function() {
     jQuery("nav").toggleClass("navBackColour");
     jQuery(".topLeftLogo").toggleClass("hideLogo");
     jQuery("nav").toggleClass("fullScreen");
+
+
 
   }); 
 
@@ -84,7 +88,6 @@ jQuery(document).ready(function() {
 
 
 
-
 ('use strict');
 console.log('im working');
 
@@ -92,9 +95,17 @@ var vh = window.innerHeight * 0.01;
 
 document.documentElement.style.setProperty('--vh', vh + 'px');
 
+var promoCode = document.getElementById('code').value;
+var myURL = 'https://tails.com/newsignup/register?pc=' + promoCode;
+document.getElementByClass('cTA').href = myURL;
 
 
+ 
+<a class="cTA" onclick="window.location='https://tails.com/newsignup/register?pc='+ document.getElementById('code').value;return false;
+  ">
 
+
+<a onclick="window.location='https://tails.com?pc='+ document.getElementById('code').value;return false;">
 
 
 

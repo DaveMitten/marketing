@@ -1432,6 +1432,7 @@ body {
   background: #ffc33e;
 }
 
+
  
  .navbar-collapse.collapsing {
 -webkit-transition: height 0s;
@@ -1456,7 +1457,7 @@ margin: auto;
 }
 
 .fullScreen{
-  height: 100vh;
+  height: 77vh;
   z-index: 9999999;
 }
 
