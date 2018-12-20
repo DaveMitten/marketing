@@ -35,7 +35,25 @@
 
 // document.documentElement.style.setProperty('--vh', vh + 'px');
 
+
+
+
+
+
+
+
+
+
 jQuery(document).ready(function() {
+
+  jQuery('.navbar-toggler').click(function() {
+    jQuery("nav").toggleClass("navBackColour");
+    jQuery(".topLeftLogo").toggleClass("hideLogo");
+    jQuery("nav").toggleClass("fullScreen");
+
+  }); 
+
+
   var swiperH = new Swiper('.swiper-container-h', {
     spaceBetween: 20,
 
@@ -60,9 +78,25 @@ jQuery(document).ready(function() {
   });
 });
 
+
+
+
+
+
+
+
 ('use strict');
 console.log('im working');
 
 var vh = window.innerHeight * 0.01;
 
 document.documentElement.style.setProperty('--vh', vh + 'px');
+
+
+
+
+
+
+
+
+

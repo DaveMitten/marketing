@@ -1396,3 +1396,90 @@ body {
   line-height: 25px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* burger menu */
+@media (max-width: 979px) {
+  .navbar-fixed-top.navbar-absolute {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+.navbar-absolute + div {
+    margin-top: 68px;
+}
+.navBackColour{
+  background: #ffc33e;
+}
+
+ 
+ .navbar-collapse.collapsing {
+-webkit-transition: height 0s;
+  -moz-transition: height 0s;
+  -ms-transition: height 0s;
+  -o-transition: height 0s;
+  transition: height 0s; 
+} 
+
+.hideLogo{
+  visibility: hidden;
+}
+.bbw{
+border-bottom: 4px solid white;
+width: 70%;
+margin: auto;
+/* padding-bottom: 30px; */
+}
+.mlogin{
+ padding: 20px;
+
+}
+
+.fullScreen{
+  height: 100vh;
+  z-index: 9999999;
+}
+
+.navBottomBar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: calc(100vh - 130px);
+  left: 0;
+  top: 0;
+  background-color: #ffb30b;
+  border-bottom: 20px solid white;
+
+}
+.navBottomBar > img{
+  padding-top: 10px;
+
+}
+
+
+.navbar-light .navbar-toggler{
+  border: 0;}
+
+  .nav-link > img:hover{
+    opacity: .5;
+  }
