@@ -145,8 +145,8 @@ document.getElementByClass('cTA').href = myURL;
 
 
  
-// <a class="cTA" onclick="window.location='https://tails.com/newsignup/register?pc='+ document.getElementById('code').value;return false;
-//   ">
+<a class="cTA" onclick="window.location='https://tails.com/newsignup/register?pc='+ document.getElementById('code').value;return false;
+   ">
 
 
 // <a onclick="window.location='https://tails.com?pc='+ document.getElementById('code').value;return false;">
