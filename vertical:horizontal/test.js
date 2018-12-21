@@ -48,7 +48,12 @@
 
 jQuery(document).ready(function() {
 
+  jQuery('#navbarSupportedContent').delay(1000);
+
+
   jQuery('.navbar-toggler').click(function() {
+    jQuery('#navbarSupportedContent').css({ 'visibility': 'visible' });
+
     jQuery("nav").toggleClass("navBackColour");
 
     jQuery(".topLeftLogo").toggleClass("hideLogo");
@@ -82,6 +87,44 @@ jQuery(document).ready(function() {
     }
   });
 });
+
+
+
+// Burger - How it works:<a class="cTA" onclick="window.location='https://tails.com/how-it-works?pc='+ document.getElementById('code').value;return false;
+// ">
+
+
+
+
+// - Burger - Food: <a class="cTA" onclick="window.location='https://tails.com/lp/our-dog-food?pc='+ document.getElementById('code').value;return false;
+// ">
+
+
+// - Burger - Our pricing: <a class="cTA" onclick="window.location='https://tails.com/pricing/?pc='+ document.getElementById('code').value;return false;
+// ">
+
+
+// - Burger - Reviews: <a class="cTA" onclick="window.location='https://tails.com/reviews?pc='+ document.getElementById('code').value;return false;
+// ">
+
+
+// - Burger - Help: <a class="cTA" onclick="window.location='https://tails.com/help/?pc='+ document.getElementById('code').value;return false;
+// ">
+
+
+// - Burger - Login: <a class="cTA" onclick="window.location='https://tails.com/signin/?pc='+ document.getElementById('code').value;return false;
+// ">
+
+// - Burger - Twitter icon:<a class="nav-link" href="https://twitter.com/tailsdogfood" style="margin: 5px;">
+
+// // - Burger - Facebook icon:<a class="nav-link" href="https://www.facebook.com/tailsUK/" style="margin: 5px;">
+ 
+
+// // - Burger - Instagram icon: <a class="nav-link" href="https://www.instagram.com/tails.com_uk/" style="margin: 5px;">
+
+
+
+
 
 
 

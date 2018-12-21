@@ -1505,3 +1505,8 @@ margin: auto;
     margin-top: 10px;
 
   }
+
+  #navbarSupportedContent{
+    visibility: hidden; 
+  }
+  
